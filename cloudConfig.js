@@ -1,6 +1,7 @@
 const cloudinary = require('cloudinary').v2;
 const { allow } = require('joi');
-const { CloudinaryStorage } = require('multer-storage-cloudinary');
+const { CloudinaryStorage } = require("@fluidjs/multer-cloudinary");
+
 
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
